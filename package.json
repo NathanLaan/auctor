@@ -1,0 +1,19 @@
+{
+  "name": "auctor",
+  "version": "1.0.0",
+  "description": "Node.js based static site generator.",
+  "main": "index.js",
+  "author": "Nathan Laan <nathanlaan@gmail.com> (https://laan.pro)",
+  "license": "MIT",
+  "repository": "https://github.com/nathanlaan/auctor",
+  "dependencies": {
+    "cross-env": "^5.1.4",
+    "ejs": "^2.5.9",
+    "front-matter": "^2.3.0",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
+    "prettier": "^1.12.1",
+    "serve": "^13.0.2",
+    "marked": "^4.0.10"
+  }
+}
