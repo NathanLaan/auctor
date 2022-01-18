@@ -1,6 +1,12 @@
 /**
  *
  * Node.js based static site generator.
+ * 
+ * config:
+ *  - siteTitle: 'Site title used in layout templates.'
+ *  - siteDescription: 'Site description used in layout templates.'
+ *  - rootPath: 'Root path passed to layout templates for links and assets.'
+ *  - outputPath: 'Output path for generated pages'
  *  
  */
 module.exports = function auctor(config) {

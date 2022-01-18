@@ -1,9 +1,9 @@
 {
   "name": "auctor",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Node.js based static site generator.",
   "main": "index.js",
-  "author": "Nathan Laan <nathanlaan@gmail.com> (https://laan.pro)",
+  "author": "Nathan Laan",
   "license": "MIT",
   "repository": "https://github.com/nathanlaan/auctor",
   "dependencies": {
