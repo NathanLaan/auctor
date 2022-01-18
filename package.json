@@ -7,12 +7,10 @@
   "license": "MIT",
   "repository": "https://github.com/nathanlaan/auctor",
   "dependencies": {
-    "cross-env": "^5.1.4",
     "ejs": "^2.5.9",
     "front-matter": "^2.3.0",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
-    "serve": "^13.0.2",
     "marked": "^4.0.10"
   }
 }
