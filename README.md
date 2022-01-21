@@ -1,6 +1,6 @@
 # auctor
 
-Auctor is a simple Node.js based static site generator that uses [Markdown](https://github.com/markedjs/marked) or [EJS JavaScript templates](https://ejs.co/) for content and [EJS JavaScript templates](https://ejs.co/) for layout
+Auctor is a simple Node.js based static site generator that uses [Markdown](https://github.com/markedjs/marked) or [EJS JavaScript templates](https://ejs.co/) for content and [EJS JavaScript templates](https://ejs.co/) for layout templates.
 
 [Pronunciation](https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_(simple_guide_to_markup,_American)): AWKtoor
 
@@ -27,6 +27,10 @@ To keep it simple, Auctor expects the following structure:
     - (Any EJS, MD, or directories)
 
 ## References
+
+- [Auctor Documentation](https://auctor.online)
+- [Auctor Source Code](https://github.com/NathanLaan/auctor)
+- [Auctor NPM Package](https://www.npmjs.com/package/auctor)
 
 This project was heavily influenced by the following:
 
