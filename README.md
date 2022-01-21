@@ -2,7 +2,7 @@
 
 Auctor is a simple Node.js based static site generator that uses [Markdown](https://github.com/markedjs/marked) or [EJS JavaScript templates](https://ejs.co/) for content and [EJS JavaScript templates](https://ejs.co/) for layout templates.
 
-[Pronunciation](https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_(simple_guide_to_markup,_American)): ahktor
+[Pronunciation](https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_(simple_guide_to_markup,_American)): awkTOHR
 
 ## Dependencies
 
