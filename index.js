@@ -8,6 +8,7 @@
  *  rootPath: 'Root path passed to layout templates for links and assets.',
  *  outputPath: 'Output path for generated pages'
  * }
+ * 
  */
 module.exports = function auctor(config) {
 
@@ -43,6 +44,8 @@ module.exports = function auctor(config) {
     let fileOutputPath = '';
     let fileOutputName = '';
 
+    // permalinks are folders only.
+    // if permalink defined; ignore filename and save to "permalink/index.html"
     if (pageData.attributes.permalink) {
       fileOutputPath = path.join(outputPath, pageData.attributes.permalink);
       fileOutputName = `${fileOutputPath}/index.html`;
@@ -78,11 +81,11 @@ module.exports = function auctor(config) {
         pageContent = pageData.body;
     }
 
-    // render layout with page contents
+    // render page using pageContent and layout
     const layout = pageData.attributes.layout || 'default';
     const layoutFileName = `./_layout/${layout}.ejs`;
     const layoutFileContents = fse.readFileSync(layoutFileName, 'utf-8');
-    const renderedPage = ejs.render(
+    const pageContentRendered = ejs.render(
       layoutFileContents,
       Object.assign({}, templateConfig, {
         body: pageContent,
@@ -90,7 +93,7 @@ module.exports = function auctor(config) {
       })
     );
 
-    fse.writeFileSync(fileOutputName, renderedPage);
+    fse.writeFileSync(fileOutputName, pageContentRendered);
 
   });
 }
