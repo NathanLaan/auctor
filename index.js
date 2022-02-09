@@ -55,7 +55,7 @@ module.exports = function auctor(config) {
     }
 
     if (process.env.NODE_ENV !== 'prod') {
-      console.log(`outputPATH: ${fileOutputPath}\t\t NAME: ${fileOutputName}`);
+      console.log(`OUTPUT: PATH: ${fileOutputPath.padEnd(20)} NAME: ${fileOutputName.padEnd(20)}`);
     }
 
     fse.mkdirsSync(fileOutputPath);
