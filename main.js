@@ -5,6 +5,7 @@
  * config {
  *  siteTitle: 'Site title used in layout templates.',
  *  siteDescription: 'Site description used in layout templates.',
+ *  sitePath: 'The root path where the site can be found (./site).',
  *  rootPath: 'Root path passed to layout templates for links and assets.',
  *  outputPath: 'Output path for generated pages'
  * }
@@ -21,7 +22,7 @@ module.exports = function auctor(config) {
   const glob = require('glob');
 
   // paths
-  const sitePath = './site';
+  const sitePath = (config.sitePath !== null) ? config.sitePath : './site';
   const contentPath = sitePath + "/content";
   const outputPath = config.outputPath;
 
