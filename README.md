@@ -4,6 +4,10 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 
 [Pronunciation](https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_(simple_guide_to_markup,_American)): awkTOHR
 
+## TODO
+
+- Duplicate page detection (output to same file location).
+
 ## Dependencies
 
 - [marked](https://www.npmjs.com/package/marked) Markdown parser.
