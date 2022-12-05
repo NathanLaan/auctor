@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": "https://github.com/nathanlaan/auctor",
   "dependencies": {
-    "ejs": "^2.5.9",
+    "ejs": "^3.1.8",
     "front-matter": "^2.3.0",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
