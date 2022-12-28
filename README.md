@@ -14,6 +14,11 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 
 - Duplicate page detection (output to same file location).
 - Create an index as content generated (could be used by duplicate page detection algorithm).
+- Sitemap
+- Robots.txt
+- SASS
+- Minify
+- Add [Code of Conduct](https://www.contributor-covenant.org/)
 
 ## Dependencies
 
