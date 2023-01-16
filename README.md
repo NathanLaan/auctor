@@ -47,6 +47,7 @@ To keep it simple, Auctor expects the following structure:
 - [Auctor Documentation](https://auctor.online)
 - [Auctor Source Code](https://github.com/NathanLaan/auctor)
 - [Auctor NPM Package](https://www.npmjs.com/package/auctor)
+- This project loosely follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 This project was heavily influenced by the following:
 
