@@ -41,6 +41,14 @@ To keep it simple, Auctor expects the following structure by convention:
 - content
   - (Any EJS, MD, or directories)
 
+## Basic NPM Commands
+
+```bash
+npm install   # install required NPM packages
+npm run build # run the auctor build process
+npm run serve # serve the generated HTML pages (locally)
+```
+
 ## References
 
 - [Auctor Documentation](https://auctor.online)
