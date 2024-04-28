@@ -29,17 +29,17 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 
 ## Getting started
 
-To keep it simple, Auctor expects the following structure:
+To keep it simple, Auctor expects the following structure by convention:
 
 - _includes
   - (Any EJS includes)
 - _layout
   - default.ejs
   - (Any other EJS layout files)
-- site
-  - assets (CSS, JS, images)
-  - content
-    - (Any EJS, MD, or directories)
+- assets
+  - (Any CSS, JS, image files)
+- content
+  - (Any EJS, MD, or directories)
 
 ## References
 
