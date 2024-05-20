@@ -49,6 +49,13 @@ npm run build # run the auctor build process
 npm run serve # serve the generated HTML pages (locally)
 ```
 
+## NPM Package Update Commands
+
+```bash
+npm login
+npm publish
+```
+
 ## References
 
 - [Auctor Documentation](https://auctor.online)
