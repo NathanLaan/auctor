@@ -1,6 +1,6 @@
 {
   "name": "auctor",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Node.js based static site generator.",
   "main": "main.js",
   "author": "Nathan Laan",
