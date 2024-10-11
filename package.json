@@ -8,7 +8,7 @@
   "repository": "https://github.com/nathanlaan/auctor",
   "dependencies": {
     "ejs": "^3.1.8",
-    "front-matter": "^2.3.0",
+    "front-matter": "^4.0.2",
     "fs-extra": "^5.0.0",
     "glob": "^11.0.0",
     "marked": "^14.1.2"
