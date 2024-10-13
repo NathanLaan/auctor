@@ -8,6 +8,7 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 
 - Version 1.1.1 contains an update for EJS with breaking changes to includes: `<% include file.ejs %>` changes to `<%- include('file.ejs'); %>`
 - Version 1.2.0 contains critical fixes and breaking changes to the `serve` module.
+- Version 1.4.0 updates all dependencies to latest versions, including a few breaking changes.
 
 ## Roadmap
 
