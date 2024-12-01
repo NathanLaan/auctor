@@ -52,7 +52,7 @@ module.exports = function auctor(config) {
       fileOutputName = `${fileOutputPath + path.sep }index.html`;
     } else {
       fileOutputPath = path.join(outputPath, fileInfo.dir);
-      fileOutputName = `${fileOutputPath + path.sep }/${fileInfo.name}.html`;
+      fileOutputName = `${fileOutputPath + path.sep + fileInfo.name}.html`;
     }
 
     if (process.env.NODE_ENV !== 'prod') {
