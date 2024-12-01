@@ -49,10 +49,12 @@ module.exports = function auctor(config) {
     // if permalink defined; ignore filename and save to "permalink/index.html"
     if (pageData.attributes.permalink) {
       fileOutputPath = path.join(outputPath, pageData.attributes.permalink);
-      fileOutputName = `${fileOutputPath + path.sep }index.html`;
+      fileOutputPath = fileOutputPath.endsWith(path.sep) ? fileOutputPath : fileOutputPath + path.sep;
+      fileOutputName = `${fileOutputPath }index.html`;
     } else {
       fileOutputPath = path.join(outputPath, fileInfo.dir);
-      fileOutputName = `${fileOutputPath + path.sep + fileInfo.name}.html`;
+      fileOutputPath = fileOutputPath.endsWith(path.sep) ? fileOutputPath : fileOutputPath + path.sep;
+      fileOutputName = `${fileOutputPath + fileInfo.name}.html`;
     }
 
     if (process.env.NODE_ENV !== 'prod') {
