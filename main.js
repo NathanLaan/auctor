@@ -49,14 +49,16 @@ module.exports = function auctor(config) {
     // if permalink defined; ignore filename and save to "permalink/index.html"
     if (pageData.attributes.permalink) {
       fileOutputPath = path.join(outputPath, pageData.attributes.permalink);
-      fileOutputName = `${fileOutputPath}/index.html`;
+      fileOutputName = `${fileOutputPath + path.sep }index.html`;
     } else {
       fileOutputPath = path.join(outputPath, fileInfo.dir);
-      fileOutputName = `${fileOutputPath}/${fileInfo.name}.html`;
+      fileOutputName = `${fileOutputPath + path.sep }/${fileInfo.name}.html`;
     }
 
     if (process.env.NODE_ENV !== 'prod') {
-      console.log(`SAVE PATH: ${fileOutputPath.padEnd(30)} FILE: ${fileOutputName.padEnd(30)}`);
+      // TODO: Add verbose output flag.
+      //console.log(`SAVE PATH: ${fileOutputPath.padEnd(30)} FILE: ${fileOutputName.padEnd(30)}`);
+      console.log(`SAVE: ${fileOutputName}`);
     }
 
     fse.mkdirsSync(fileOutputPath);
