@@ -13,13 +13,13 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 
 ## Roadmap
 
-- [ ] Duplicate page detection (output to same file location).
-- [ ] Create an index as content generated (could be used by duplicate page detection algorithm).
-- [ ] Add automated sitemap generation for all generated pages.
+- [ ] Create an index as content is generated.
+  - [ ] Duplicate page output detection (based on index).
+  - [ ] Add automated sitemap generation (based on index).
 - [ ] Add Robots.txt support, with integrated sitemap support.
 - [ ] Add SASS support.
 - [ ] Add minify support.
-- [ ] Add [Code of Conduct](https://www.contributor-covenant.org/)
+- [ ] Add [Code of Conduct](https://www.contributor-covenant.org/).
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 
 ## Getting Started
 
-To keep it simple, Auctor expects the following structure by convention:
+Auctor expects the following structure by convention:
 
 - _layout
   - default.ejs
@@ -63,7 +63,7 @@ npm publish
 - [Auctor NPM Package](https://www.npmjs.com/package/auctor)
 - This project loosely follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-This project was heavily influenced by the following:
+This project was influenced by the following:
 
 - [Build a static site generator in 40 lines with Node.js](https://www.webdevdrops.com/en/build-static-site-generator-nodejs-8969ebe34b22/)
 - [Building a simple static page generator with Node.js](https://hackernoon.com/building-a-simple-static-page-generator-with-node-js-4f58f680c47d)
