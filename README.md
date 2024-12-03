@@ -29,12 +29,10 @@ Auctor is a simple Node.js based static site generator that uses [Markdown](http
 - [fs-extra](https://www.npmjs.com/package/fs-extra) for filesystem access.
 - [glob](https://www.npmjs.com/package/glob) for pattern matching.
 
-## Getting started
+## Getting Started
 
 To keep it simple, Auctor expects the following structure by convention:
 
-- _includes
-  - (Any EJS includes)
 - _layout
   - default.ejs
   - (Any other EJS layout files)
