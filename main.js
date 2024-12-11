@@ -20,6 +20,14 @@ module.exports = function auctor(config) {
   const ejs = require('ejs');
   const marked = require('marked');
   const glob = require('glob');
+  const package = require('./package.json');
+
+  if (process.env.NODE_ENV !== 'prod' && package !== null) {
+    const pn = package.name;
+    const pv = package.version;
+    console.log(`${pn} v${pv} Generating site [${config.siteTitle}]`);
+  }
+
 
   // paths
   const sitePath = (config.sitePath !== null) ? config.sitePath : './site';
