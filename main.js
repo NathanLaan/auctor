@@ -28,7 +28,6 @@ module.exports = function auctor(config) {
     console.log(`${pn} v${pv} Generating site [${config.siteTitle}]`);
   }
 
-
   // paths
   const sitePath = (config.sitePath !== null) ? config.sitePath : './site';
   const contentPath = sitePath + "/content";
