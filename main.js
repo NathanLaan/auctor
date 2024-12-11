@@ -25,7 +25,7 @@ module.exports = function auctor(config) {
   if (process.env.NODE_ENV !== 'prod' && package !== null) {
     const pn = package.name;
     const pv = package.version;
-    console.log(`${pn} v${pv} Generating site [${config.siteTitle}]`);
+    console.log(`${pn} v${pv} Generating site [${config.siteTitle}] Starting`);
   }
 
   // paths
@@ -65,9 +65,9 @@ module.exports = function auctor(config) {
     }
 
     if (process.env.NODE_ENV !== 'prod') {
-      // TODO: Add verbose output flag.
+      // TODO: Add verbose logging flag.
       //console.log(`SAVE PATH: ${fileOutputPath.padEnd(30)} FILE: ${fileOutputName.padEnd(30)}`);
-      console.log(`SAVE: ${fileOutputName}`);
+      console.log(`Saving: ${fileOutputName}`);
     }
 
     fse.mkdirsSync(fileOutputPath);
@@ -108,4 +108,11 @@ module.exports = function auctor(config) {
     fse.writeFileSync(fileOutputName, pageContentRendered);
 
   });
+  
+  if (process.env.NODE_ENV !== 'prod' && package !== null) {
+    const pn = package.name;
+    const pv = package.version;
+    console.log(`${pn} v${pv} Generating site [${config.siteTitle}] Completed`);
+  }
+
 }
