@@ -37,7 +37,7 @@ module.exports = function auctor(config) {
   fse.emptyDirSync(outputPath);
 
   // copy assets folder
-  fse.copy(`${sitePath}/assets`, `${outputPath}/assets`);
+  fse.copySync(`${sitePath}/assets`, `${outputPath}/assets`);
 
   // read pages
   const files = glob.sync('**/*.@(md|ejs|html)', { cwd: `${contentPath}` });
